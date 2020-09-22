@@ -1,9 +1,7 @@
 import matplotlib.pyplot as plt
 from apolo.data import dirconfig, objects
 from apolo.catalog_proc.utils import read_fits_table
-import numpy as np
 
-# -----------------------------
 
 def make_photerror_plot(tile):
     """
@@ -34,7 +32,6 @@ def make_photerror_plot(tile):
 
     fig.savefig(f'figphoterr_{tile.name}.png', overwrite=True)
     fig.clf()
-
 
 
 data_dir = dirconfig.proc_vvv
