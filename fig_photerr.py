@@ -34,8 +34,10 @@ def make_photerror_plot(tile):
     fig.clf()
 
 
-data_dir = dirconfig.proc_vvv
-tiles = [objects.t067, objects.t068, objects.t069, objects.t070, objects.t105, objects.t106, objects.t107, objects.t108]
+if __name__ == "__main__":
+    data_dir = dirconfig.proc_vvv
+    tiles = [objects.t067, objects.t068, objects.t069, objects.t070, objects.t105, objects.t106, objects.t107,
+             objects.t108]
 
-for tile in tiles:
-    make_photerror_plot(tile)
+    for tile in tiles:
+        make_photerror_plot(tile)
